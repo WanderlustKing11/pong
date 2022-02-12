@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background-color: darkgoldenrod;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        background-color: yellow;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        width: 940px;
+        height: 510px;
+        position: relative;
+        margin: auto;
+        background-color: black;
+    }
+
+    #scores {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: unset;
+        margin-top: 40px;
+        color: white;
+        font-size: 4rem;
+    }
+
+    #p1score {
+        z-index: 1;
+    }
+
+    #p2score {
+        z-index: 1;
+    }
+
+    #canvas {
+        position: absolute;
+        top: 0;
+        background-color: powderblue;
+        border-top: 35px solid gray;
+        border-right: 25px solid darkgrey;
+        border-bottom: 25px solid lightgray;
+        border-left: 30px solid darkgrey;
+    }
+</style>
+<header>
+    <h1>PONG!</h1>
+</header>
+<main>
+    <section id="scores">
+        <div id="p1score">0</div>
+        <div id="p2score">0</div>
+    </section>
+    <canvas id="canvas"></canvas>
+</main>
+<footer>
+    <h1>Thank you for playing!</h1>
+</footer>
+
+<script src="index.js"></script>
