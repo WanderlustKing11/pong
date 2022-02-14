@@ -41,7 +41,7 @@ class Ball {
 }
 
 // Start ball
-const b1 = new Ball(cenx, ceny, 8, "red");
+const b1 = new Ball(cenx, ceny, 8, "blue");
 
 let paddles = []
 class Paddle {
@@ -72,8 +72,8 @@ class Paddle {
 }
 
 // Players
-const player1 = new Paddle(30, ceny - 20, "red")
-const player2 = new Paddle(860, ceny - 20, "red")
+const player1 = new Paddle(30, ceny - 20, "#6DFF2E")
+const player2 = new Paddle(860, ceny - 20, "#6DFF2E")
 
 // Ball Borders
 function borders(ball) {
